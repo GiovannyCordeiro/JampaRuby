@@ -1,19 +1,19 @@
-name: Your New Jekyll Site
-description: Blogging about stuffs
-meta_description: "Your New Jekyll Site, Blogging about stuffs"
+name: Jampa Ruby
+description: Comunidade de desenvolvedores ruby na paraiba!
+meta_description: "Comunidade de ruby"
 
 markdown: kramdown
 highlighter: rouge
 logo: false
-paginate: 15
-baseurl: /kasper
-domain_name: "http://yourblog-domain.com"
+paginate: 5
+baseurl: ""
+domain_name: "yourblog-domain.com"
 google_analytics: "UA-XXXXXXXX-X"
 plugins: [jekyll-paginate]
 
 # Details for the RSS feed generator
 url: ""
-author: "Your Name"
+author: ""
 
 # Disqus config
 disqus-shortname: ""
