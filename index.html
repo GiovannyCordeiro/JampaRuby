@@ -3,6 +3,7 @@ layout: default
 title: Home
 cover: true
 about: 'about.html'
+isEvent: false
 next_event: 24/05 ás 14hrs
 ---
 
@@ -32,9 +33,15 @@ next_event: 24/05 ás 14hrs
         </div>
         <div class="next-event">
           <div class="wrapper-next-event">
-            <b>Próximo encontro</b>
-            <h2>{{page.next_event}}</h2>
-            <a href="/"><i>Clicke aqui e saiba mais</i></a>
+            {% if page.isEvent %}
+              <b>🗓️ Próximo encontro:</b>
+              <h2>{{page.next_event}}</h2>
+              {% assign latest_post = site.posts.first %}
+              <a href="{{ latest_post.url }}">Clicke aqui e saiba mais</a>
+            {% else %}
+              <h2 style="font-size: 4rem;">Estamos organizando o proximo encontro!</h2>
+              <b style="margin-top: 1rem;">Fique de olho nas redes sociais para saber mais 😉</b>
+            {% endif %}
           </div>
         </div>
       </div>
