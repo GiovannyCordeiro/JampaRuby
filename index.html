@@ -3,6 +3,7 @@ layout: default
 title: Home
 cover: true
 about: 'about.html'
+next_event: 24/05 ás 14hrs
 ---
 
 <header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
@@ -13,7 +14,7 @@ about: 'about.html'
           </a>
       {% endif %}
     </nav>
-    <div class="vertical">
+    <!-- <div class="vertical">
         <div class="main-header-content inner">
             <h1 class="page-title">{{ site.name }}</h1>
             <h2 class="page-description">
@@ -21,15 +22,31 @@ about: 'about.html'
                 {% if page.about %} <a href='{{page.about | relative_url}}'> About me </a> {% endif %}
             </h2>
         </div>
+    </div> -->
+
+    <div class="banner-initial">
+      <div class="wrapper-banner-initial">
+        <div class="description-banner">
+          <h2>Jampa <b>Ruby</b></h2>
+          <p>{{site.description}}</p>
+        </div>
+        <div class="next-event">
+          <div class="wrapper-next-event">
+            <b>Próximo encontro</b>
+            <h2>{{page.next_event}}</h2>
+            <a href="/"><i>Clicke aqui e saiba mais</i></a>
+          </div>
+        </div>
+      </div>
     </div>
+
     <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
 </header>
 
 
 <main id="content" class="content" role="main">
-
-
-    <div class="extra-pagination inner">
+  <h1>Encontros realizados!</h1>
+  <div class="extra-pagination inner">
         {% include pagination.html %}
     </div>
 

@@ -17,6 +17,7 @@
     10. Media Queries (Tablet)
     11. Media Queries (Mobile)
     12. Animations
+    13. Especific Jampa Ruby layout
 
 */
 
@@ -33,7 +34,7 @@ audio, canvas, video { display: inline-block; }
 audio:not([controls]) { display: none; height: 0; }
 [hidden], template { display: none; }
 html {
-   font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
    -ms-text-size-adjust: 100%;
    -webkit-text-size-adjust: 100%;
 }
@@ -52,7 +53,7 @@ hr {
 }
 mark { background: #FF0; color: #000; }
 code, kbd, pre,
-samp { font-family: monospace, serif; font-size: 1em; }
+samp { font-family: "Poppins", sans-serif, serif; font-size: 1em; }
 pre { white-space: pre-wrap; }
 q { quotes: "\201C" "\201D" "\2018" "\2019"; }
 small { font-size: 80%; }
@@ -127,6 +128,7 @@ table { border-collapse: collapse; border-spacing: 0; }
     text-decoration: none !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    color: #e74c3c;
 }
 
 /* Each icon is created by inserting the correct character into the
@@ -170,13 +172,14 @@ html {
     height: 100%;
     max-height: 100%;
     font-size: 62.5%;
+    font-family: "Poppins", sans-serif;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
     height: 100%;
     max-height: 100%;
-    font-family: "Merriweather", serif;
+    font-family: "Poppins", sans-serif;
     letter-spacing: 0.01rem;
     font-size: 1.8rem;
     line-height: 1.75em;
@@ -202,7 +205,7 @@ h4, h5, h6 {
     color: #2E2E2E;
     line-height: 1.15em;
     margin: 0 0 0.4em 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 h1 {
@@ -326,7 +329,7 @@ mark {
 
 code, tt {
     padding: 1px 3px;
-    font-family: Inconsolata, monospace, sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 0.85em;
     white-space: pre-wrap;
     border: #E3EDF3 1px solid;
@@ -341,7 +344,7 @@ pre {
     border: #E3EDF3 1px solid;
     width: 100%;
     padding: 10px;
-    font-family: Inconsolata, monospace, sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 0.9em;
     white-space: pre;
     overflow: auto;
@@ -476,7 +479,7 @@ margin on the iframe, cause it breaks stuff. */
     height: 100%;
     margin-bottom: 5rem;
     text-align: center;
-    background: #222 no-repeat center center;
+    background: #ffffff no-repeat center center;
     background-size: cover;
     overflow: hidden;
 }
@@ -625,10 +628,6 @@ margin on the iframe, cause it breaks stuff. */
     right: 0;
     height: 70px;
     border: none;
-    background: -moz-linear-gradient(top, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.2)), color-stop(100%,rgba(0,0,0,0)));
-    background: -webkit-linear-gradient(top, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 100%);
-    background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 100%);
 }
 .no-cover .main-nav.overlay,
 .no-cover .back-button,
@@ -665,7 +664,7 @@ margin on the iframe, cause it breaks stuff. */
     font-size: 5rem;
     letter-spacing: -1px;
     font-weight: 700;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #fff;
 }
 
@@ -674,7 +673,7 @@ margin on the iframe, cause it breaks stuff. */
     font-size: 2rem;
     line-height: 1.5em;
     font-weight: 400;
-    font-family: "Merriweather", serif;
+    font-family: "Poppins", sans-serif;
     letter-spacing: 0.01rem;
     color: rgba(255,255,255,0.8);
 }
@@ -765,7 +764,7 @@ body:not(.post-template) .post-title {
 .post-meta {
     display: block;
     margin: 1.75rem 0 0 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1.5rem;
     line-height: 2.2rem;
     color: #9EABB3;
@@ -1165,7 +1164,7 @@ body:not(.post-template) .post-title {
 /* Location, website, and link */
 .author-profile .author-meta {
     margin: 2rem 0;
-    font-family: "Merriweather", serif;
+    font-family: "Poppins", sans-serif;
     letter-spacing: 0.01rem;
     font-size: 1.7rem;
 }
@@ -1209,7 +1208,7 @@ body:not(.post-template) .post-title {
     width: 80%;
     max-width: 710px;
     margin: 4rem auto;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1.3rem;
     color: #9EABB3;
     text-align: center;
@@ -1296,7 +1295,7 @@ body:not(.post-template) .post-title {
     margin: 8rem 0 0 0;
     padding: 0.5rem 15px;
     border-top: #EBF2F6 1px solid;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1rem;
     line-height: 1.75em;
     color: #BBC7CC;
@@ -1771,6 +1770,81 @@ body:not(.post-template) .post-title {
         -webkit-transform: translateY(-5px) rotate(-90deg);
                 transform: translateY(-5px) rotate(-90deg);
     }
+}
+
+/* ==========================================================================
+   13.Especific Jampa Ruby layout
+   ========================================================================== */
+
+main > h1{
+  text-align: center;
+}
+
+.banner-initial{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper-banner-initial {
+  width: 70%;
+  height: 70%;
+  display: flex;
+  /* background: salmon; */
+}
+
+.description-banner,
+.next-event{
+  width: 50%;
+  height: 100%;
+}
+
+.description-banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center ;
+  text-align: start;
+  /* background:green; */
+}
+
+.description-banner h2{
+  font-size: 6rem;
+;
+}
+
+.description-banner h2 b{
+  color: #e74c3c;
+}
+
+.description-banner p{
+  font-size: 2rem;
+}
+
+.next-event{
+  text-align: start;
+  /* background: blue; */
+  display: flex;
+  align-items: center;
+}
+
+.wrapper-next-event{
+  width: 100%;
+  height: 50%;
+  border-radius: 2rem;
+  border: 4px solid #e74c3c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10%;
+  box-shadow: 0px 15px 35px -25px #e74c3c;
+}
+
+.wrapper-next-event h2{
+  font-size: 7rem;
+  margin: 0;
+  color: #e74c3c;
 }
 
 
