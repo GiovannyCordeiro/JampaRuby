@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Jampa Ruby - Numero Test"
+title:  "Jampa Ruby - Post modelo"
 date:   2024-06-30 10:37:00
 categories: Encontros
+# published: false
 ---
 
 O Jampa Ruby tem tem como objetivo reunir profissionais para compartilhar conhecimentos e novidades. Com palestras, workshops e networking, fortalece a comunidade local, explorando tendências e melhores práticas no desenvolvimento com Ruby e Ruby on Rails.
