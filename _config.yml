@@ -6,7 +6,8 @@ markdown: kramdown
 highlighter: rouge
 logo: false
 paginate: 5
-baseurl: ""
+baseurl: "/JampaRuby"
+url: "https://giovannycordeiro.github.io"
 domain_name: "yourblog-domain.com"
 google_analytics: "UA-XXXXXXXX-X"
 plugins: [jekyll-paginate]
